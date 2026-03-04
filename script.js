@@ -119,12 +119,12 @@ const menuHCV = [
             { nombre: "Copa de Vino/ Ron Linaje/Black and White", precio: "$4" },
             { nombre: "Old parr/Buchanans", precio: "$6" },
             { nombre: "Tobo de Cerveza (10 und.)", precio: "$10" },
-             { nombre: "Vino tinto o blanco italiano", precio: "$5" },
+             { nombre: "Servicio Vino tinto o blanco italiano/Caroreña", precio: "$20" },
             { nombre: "Servicio Ron Gran Reserva/Vodka Gordons", precio: "$28" },
              { nombre: "Servicio Ron Linaje", precio: "$35" },
               { nombre: "Whisky Black and White 8 años", precio: "$40" },
-            { nombre: "Servicio Whisky Old Parr 12 años", precio: "$55" },
-            { nombre: "Servicio Whisky Buchanan's 12 años", precio: "$55" }
+            { nombre: "Servicio Whisky Old Parr/Buchanans 12 años", precio: "$55" },
+          
         ]
     }
 ];
@@ -155,5 +155,6 @@ function render(data) {
         container.innerHTML += html;
     });
 }
+
 
 document.addEventListener('DOMContentLoaded', cargarMenu);
