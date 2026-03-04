@@ -1,0 +1,90 @@
+:root {
+    --blanco: #ffffff;
+    --crema: #fdfbf7;
+    --dorado: #c5a059;
+    --texto: #333333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--crema);
+    color: var(--texto);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main-header {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: var(--blanco);
+    border-bottom: 3px solid var(--dorado);
+}
+
+h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 1.8rem; }
+h1 span { color: var(--dorado); }
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.category-title {
+    color: var(--dorado);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.item-dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 8px;
+}
+
+.item-price { font-weight: 600; color: var(--dorado); }
+
+.contornos-box {
+    margin: 15px 0;
+    padding: 15px;
+    background: var(--blanco);
+    border-left: 4px solid var(--dorado);
+    font-size: 0.8rem;
+}
+
+/* PIE DE PÁGINA MÓVIL */
+.main-footer {
+    text-align: center;
+    padding: 30px 15px;
+    background: var(--blanco);
+    border-top: 1px solid #eee;
+}
+
+.phone-numbers a {
+    color: var(--dorado);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: block;
+    margin: 5px 0;
+}
+
+/* AJUSTES ESPECÍFICOS PARA TELÉFONOS */
+@media (max-width: 600px) {
+    h1 { font-size: 1.5rem; }
+    .item-name { font-size: 0.9rem; max-width: 75%; }
+    .item-dots { display: none; } /* Quitamos puntos en móvil para ganar espacio */
+    .menu-item { border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; }
+    .item-price { font-size: 1rem; }
+}
